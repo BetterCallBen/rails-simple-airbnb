@@ -1,0 +1,115 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+h3 {
+  margin: 0;
+}
+.banner {
+  width: 100%;
+  background-image: url("https://media.istockphoto.com/photos/modern-living-room-interior-3d-render-picture-id1293762741?b=1&k=20&m=1293762741&s=170667a&w=0&h=2RI8SmBN4MrEZuTvdwRzaeB887x-dukFcQBpyQ-qwS4=");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  position: relative;
+}
+.cards-details{
+  position: absolute;
+  top: 400px;
+  left: 50px;
+}
+.card-details {
+  background-color: rgb(235, 235, 235);
+  border-radius: 3px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.157);
+  padding: 10px;
+  margin: 10px;
+}
+
+.navbar {
+  background-color: rgb(207, 207, 207);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.card-flat {
+  height: 200px;
+  width: 350px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.267);
+  border-radius: 6px;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.513), rgba(0, 0, 0, 0.493)), url("https://media.istockphoto.com/photos/modern-living-room-interior-3d-render-picture-id1293762741?b=1&k=20&m=1293762741&s=170667a&w=0&h=2RI8SmBN4MrEZuTvdwRzaeB887x-dukFcQBpyQ-qwS4=");
+  background-size: cover;
+  padding: 10px;
+  height: 77%;
+  color: white;
+}
+.form-group {
+  margin: 10px 0;
+  font-family: 'Roboto', sans-serif;
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 23%;
+  font-family: 'Mohave', sans-serif;
+}
+.btn {
+  padding: 6px 14px;
+}
+.btn-blue {
+  color: rgb(24, 154, 230);
+  border: 1px solid rgb(24, 154, 230);
+  &:hover {
+    color: rgb(7, 55, 133);
+    border: 1px solid rgb(7, 55, 133);
+  }
+}
+.btn-infos {
+  color: rgb(23, 149, 199);
+  &:hover {
+    color: rgb(7, 55, 133);
+  }
+}
+.btn-edit {
+  color: rgb(199, 173, 23);
+  &:hover {
+    color: rgb(156, 112, 9);
+  }
+}
+.btn-remove {
+  color: rgb(194, 15, 15);
+  &:hover {
+    color: rgb(112, 7, 7);
+  }
+}
+.btn-back {
+  color: rgb(177, 177, 177);
+  border: 1px solid rgb(177, 177, 177);
+
+  &:hover {
+    color: rgb(112, 112, 112);
+    border: 1px solid rgb(112, 112, 112);
+  }
+}

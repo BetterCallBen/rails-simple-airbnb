@@ -1,0 +1,28 @@
+<div class="navbar">
+  <h3>Simple Airbnb</h3>
+  <div><%= link_to "Add a flat", new_flat_path, class:"btn btn-blue" %>
+  <%= link_to "Back", flats_path, class:"btn btn-back"%></div>
+
+</div>
+<div class="banner">
+  <div class="cards-details ">
+    <div class="card-details">
+      <h1><%= @flat.name %></h1>
+      <%= @flat.address %>
+    </div>
+
+    <div class="card-details">
+      <h2>A bit more about this flat...</h2>
+      <p><%= @flat.description %></p>
+      <img src="https://media.istockphoto.com/photos/route-of-arial-view-futuristic-route-gps-tracking-map-navigator-with-picture-id1291379828?b=1&k=20&m=1291379828&s=170667a&w=0&h=g8t_KVN_8H94oQNnf0UgKN7e9CGVpQzydsY8eUT7nac=" alt="map">
+    </div>
+
+    <div class="card-details">
+      <h2>Details</h2>
+      <div><i class="fas fa-users"></i> <%= @flat.number_of_guests %> <i class="fas fa-euro-sign"></i>
+      <%= @flat.price_per_night %></div>
+
+    </div>
+  </div>
+
+</div>
